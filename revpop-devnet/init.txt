@@ -1,0 +1,24 @@
+set_password 123456
+unlock 123456
+
+
+import_key nathan 5KXbCDyCPL3eGX6xX5uJHVwoAYheF7L5fKf67oQocgJA8kNvVHF
+begin_builder_transaction
+add_operation_to_builder_transaction 0 [32,{"fee":{"amount":0,"asset_id":"1.3.0"},"deposit_to_account":"1.2.70","balance_to_claim":"1.15.0","balance_owner_key":"RVP6JaiMEZZ57Q75Xh3kVbJ4owX13p7f1kkV76B3xLNFuWHVbRSyZ","total_claimed":{"amount":"1000000000000000","asset_id":"1.3.0"}}]
+sign_builder_transaction 0 ["RVP6JaiMEZZ57Q75Xh3kVbJ4owX13p7f1kkV76B3xLNFuWHVbRSyZ"] true
+
+
+upgrade_account nathan true
+
+
+vote_for_committee_member nathan init0 true true
+vote_for_committee_member nathan init1 true true
+vote_for_committee_member nathan init2 true true
+vote_for_committee_member nathan init3 true true
+vote_for_committee_member nathan init4 true true
+vote_for_committee_member nathan init5 true true
+vote_for_committee_member nathan init6 true true
+vote_for_committee_member nathan init7 true true
+vote_for_committee_member nathan init8 true true
+vote_for_committee_member nathan init9 true true
+vote_for_committee_member nathan init10 true true

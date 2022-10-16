@@ -89,3 +89,14 @@ services:
       --seed-nodes [\"witness:2771\"]
       --genesis-json /revpop/genesis.json
       --plugins "witness account_history market_history grouped_orders api_helper_indexes"
+
+  init:
+    image: local/revpop-core
+    volumes:
+      - ./init.txt:/revpop/init.txt
+    depends_on:
+      - proxy
+    command: cat /revpop/init.txt | tee -a cli_wallet
+      --server-rpc-endpoint ws://proxy:8090
+      --chain-id 5a93b204cb70787cb077025d74480c59f69e47b9decad9e4ddba868bc913dc65
+
