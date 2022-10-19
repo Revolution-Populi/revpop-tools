@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 Cryptonomex, Inc., and contributors.
+ * Copyright (c) 2018-2023 Revolution Populi Limited <info@revolutionpopuli.com>, and contributors.
  *
  * The MIT License
  *
@@ -64,8 +64,6 @@ int main( int argc, char** argv )
    std::string hash;
    std::string witness_key = "RVP4iLKwaDRJnSjphSYtCT5F0TonHE4NEtv5MDanjrfjTdhAQ3Xjn";
    uint64_t prev_seed = 1534654114650;
-
-   // шифрованный_секрет = sha512(секрет + sha256(секрет + sha512(cr_seed + witness_pub_key + sha512(текщее_время))))
 
    auto start = std::chrono::steady_clock::now();
 

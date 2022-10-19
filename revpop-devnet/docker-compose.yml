@@ -8,6 +8,7 @@ services:
       --rpc-endpoint 0.0.0.0:8090
       --p2p-endpoint 0.0.0.0:2771
       --enable-stale-production
+      --required-participation 0
       --seed-nodes []
       --genesis-json /revpop/genesis.json
       --private-key [\""RVP6JaiMEZZ57Q75Xh3kVbJ4owX13p7f1kkV76B3xLNFuWHVbRSyZ"\",\""5KXbCDyCPL3eGX6xX5uJHVwoAYheF7L5fKf67oQocgJA8kNvVHF"\"]
